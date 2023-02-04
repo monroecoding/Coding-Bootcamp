@@ -43,7 +43,7 @@ class Coordinates:
         else:
             return False
 
-    def __str__(self):
+    def __repr__(self):
         return f"({self.x}, {self.y})"
 
 
@@ -55,7 +55,7 @@ coords2 = Coordinates(3,4)
 print(coords1 + coords2) #since the functionality for __add__ is defined in the class, it uses that definition instead
 print(coords1 == coords2)
 
-print(coords1) #passing an object to the print function uses its defined __str__ method
+print(coords1) #passing an object to the print function uses its defined __repr__ method
 
 
 #classes can inherit from other classes, in this example 'Employee' is the parent class
